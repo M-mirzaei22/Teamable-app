@@ -5,23 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teamable</title>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <script src="app.js"></script>
+     
 </head>
 <body>
-    <div>
+    <div id="display-view">
+        
         <h1>User profile</h1>
-        <img src="image_2698710.jpg">
+        <img src="./image_2698710.jpg">
      
-        <span>Name: </span><b>Anna Smith </b>
+        <span>Name: </span><b id = "name" >Anna Smith </b>
         <hr />
 
-        <span>Email: </span><b>Anna.Smith@example.com </b>
+        <span>Email: </span><b id = "email" >Anna.Smith@example.com </b>
         <hr />
 
-        <span>Interests : </span><b>bike riding </b>
+        <span>Interests : </span><b id = "interests" >bike riding </b>
         <hr />
 
-        <button>Edit Profile</button>
-        </div>
+        <button onclick="editeProfile()">Edit Profile</button>
+    </div>
+
+    <div id="edit-view" >
+
+        <h1>User profile</h1>
+        <img src="./image_2698710.jpg">
+     
+        <span>Name: </span>
+        <input type="text" id = "input-name" placeholder="Anna Smith"/>
+        <hr />
+    
+        <span>Email: </span>
+        <input type="text" id="input-email"  placeholder="Anna.Smith@example.com"/>
+        <hr />
+    
+        <span>Interests : </span>
+        <input type="text" id="input-interests"  placeholder="bike riding"/>
+        <hr />
+    
+        <button onclick="updateProfile()" >Update Profile</button>
+    </div>
 </body>
 </html>
